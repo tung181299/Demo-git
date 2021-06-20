@@ -556,9 +556,12 @@ header .navbar-nav .nav-item:hover .nav-link {
 }
 
 footer .footer__submit .form-control {
-    padding: 14px;
-    height: 100%;
+    /* padding: 14px; */
+    /* Không để height của button và input phụ thuộc vào padding */
+
+    height: 45px;
     border-radius: 0;
+    padding: 0 15px;
     color: #888;
     letter-spacing: 2px;
     font-size: 14px;
@@ -575,7 +578,8 @@ footer .footer__submit .form-control:focus {
     border-radius: 0;
     background-color: #ff4f81;
     color: #fff;
-    padding: 10px 30px;
+    padding: 0 15px;
+    height: 45px;
     cursor: pointer;
     transition: .5s all;
 }
